@@ -1,2 +1,5 @@
 node_modules
-covarage
+covarage.DS_Store
+.github/
+.gitignore
+.npmrc
