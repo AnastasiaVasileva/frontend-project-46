@@ -3,3 +3,4 @@ covarage.DS_Store
 .github/
 .gitignore
 .npmrc
+.DS_Store
