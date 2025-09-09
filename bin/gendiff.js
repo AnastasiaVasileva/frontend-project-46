@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import program from '../src/program.js';
+import program from '../src/program.js'
 
-program();
+program()

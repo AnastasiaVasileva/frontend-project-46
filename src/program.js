@@ -1,5 +1,5 @@
-import { program } from 'commander';
-import gendiff from '../index.js';
+import { program } from 'commander'
+import gendiff from '../index.js'
 
 export default () => program
   .name('gendiff')
@@ -8,6 +8,6 @@ export default () => program
   .version('0.8.0')
   .option('-f, --format [type]', 'Output format', 'stylish')
   .action((filepath1, filepath2) => {
-    console.log(gendiff(filepath1, filepath2, program.opts().format));
+    console.log(gendiff(filepath1, filepath2, program.opts().format))
   })
-  .parse();
+  .parse()
