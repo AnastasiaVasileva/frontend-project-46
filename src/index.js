@@ -5,9 +5,9 @@ import parser from './parser.js'
 import buildData from './compare.js'
 import format from './formatters/index.js'
 
-const getFullPath = (filepath) => path.resolve(process.cwd(), filepath)
-const extractFormat = (filepath) => path.extname(filepath).slice(1)
-const getData = (filepath) => parser(fs.readFileSync(getFullPath(filepath), 'utf-8'), extractFormat(filepath))
+const getFullPath = (filepath) => path.resolve(process.cwd(), filepath) // eslint-disable-line
+const extractFormat = (filepath) => path.extname(filepath).slice(1) // eslint-disable-line
+const getData = (filepath) => parser(fs.readFileSync(getFullPath(filepath), 'utf-8'), extractFormat(filepath)) // eslint-disable-line
 
 const gendiff = (filepath1, filepath2, formatName = 'stylish') => {
   const fullFilePath1 = getFullPath(filepath1)

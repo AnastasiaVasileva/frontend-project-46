@@ -6,8 +6,8 @@ import gendiff from '../index.js'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-const getFixturePath = (fixtureFilename) => path.join(__dirname, '..', '__fixtures__', fixtureFilename)
-const readFile = (fixtureFilename) => fs.readFileSync(getFixturePath(fixtureFilename), 'utf-8')
+const getFixturePath = (fixtureFilename) => path.join(__dirname, '..', '__fixtures__', fixtureFilename) // eslint-disable-line
+const readFile = (fixtureFilename) => fs.readFileSync(getFixturePath(fixtureFilename), 'utf-8') // eslint-disable-line
 
 test('Сomparison of two files, format - stylish', () => {
   expect(gendiff(getFixturePath('file1.json'), getFixturePath('file2.json'), 'stylish')).toEqual(readFile('test-stylish.txt'))
